@@ -193,7 +193,7 @@ body {
 
 .blockFeaturedTag .belief p {
     font-size: 22px;
-    color: #b4a064;
+    color: #938461;
     margin: 0;
     text-align: center;
     line-height: 28px;
@@ -356,7 +356,7 @@ ul li {
     font-size: 22px;
     line-height: 32px;
     margin: 45px 0 9px;
-    color: #b4a064;
+    color: #938461;
     font-weight: 400;
     text-align: center;
 }
@@ -659,7 +659,7 @@ sup {
 
 #block-exclusivities h2 {
     text-align: center;
-    color: #b4a064;
+    color: #938461;
     font-size: 22px;
     line-height: 32px;
     margin: 45px 0 9px;
@@ -718,7 +718,7 @@ sup {
 
 #themes h2 {
     text-align: center;
-    color: #b4a064;
+    color: #938461;
     font-size: 22px;
     line-height: 32px;
     margin: 45px 0 9px;
@@ -872,7 +872,7 @@ sup {
     /* Destinations */
     
 #destination {
-    padding: 48px 0 20px;
+    padding: 48px 0 60px;
     margin: 0 auto
 }
 
@@ -881,7 +881,7 @@ sup {
     line-height: 32px;
     margin: 45px 0 9px;
     padding: 0 0 10px;
-    color: #b4a064;
+    color: #938461;
     font-weight: 400;
     text-align: center;
 }
@@ -919,7 +919,7 @@ sup {
     margin: 0;
     width: 100%;
     height: auto;
-    box-sizing: border-box;
+   /* box-sizing: border-box;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -927,39 +927,92 @@ sup {
 }
 
 #destination .destinationContent {
-    padding: 20px 10px 20px 20px;
+    max-width: 1004px;
+    margin: 45px auto 15px;
+    padding: 0 10px;
 }
 
-#destination .destinationContent h3 {
-    float: none;
+#destination .destinationContent h2 {
+    position: relative;
+    font-size: 30px;
+    color: #938461;
+    max-width: 1004px;
     text-transform: uppercase;
-    font-size: 22px;
-    color: #b4a064;
-    text-align: left;
-}
-
-#destination .destinationContent p {
-    font-size: 16px;
-    float: left;
-    line-height: 24px;
-    margin: 2px 0 10px;
-}
-
-#destination .destinationContent .more-arrow {
-    float: right;
-    padding: 0 10px 20px 0;
-    font-size: 1.1rem;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 0 5px;
+    margin: 60px auto 20px;
+    font-weight: 400;
 }
 
 #destination .destinationContent a {
     text-decoration: none;
-    color: #333333;
-    cursor: pointer;
-}
-#destination .destinationContent .more-arrow:hover {
-    color: #b4a064;
 }
 
+#destination .destinationContent .slogan {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#destination .destinationContent .shortDescription p {
+    line-height: 30px;
+    margin: 0 auto 15px;
+    font-size: 16px;
+    text-align: center;
+    max-width: 1004px;
+}
+
+.longDescriptionSectionBlock {
+    padding: 45px 0 100px;
+    
+}
+
+.longDescriptionSection.slogan {
+    max-width: 1004px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.longDescriptionSection.slogan .longDescriptionSlogan p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0;
+    padding: 0 15px 0 0;
+    color: #938461;
+    text-align: left;
+    float: left;
+    max-width: 300px;
+    width: 100%;
+}
+
+.longDescriptionSection.slogan .longDescription {
+    float: left;
+    max-width: 684px;
+    width: 100%;
+}
+
+.longDescriptionSection.slogan .longDescription p {
+    text-align: left;
+}
+
+.longDescriptionSection .longDescription p {
+    line-height: 24px;
+    margin: 5px auto 15px;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 1004px;
+}
+
+#separation-blockFooter {
+    border: 1px solid;
+    border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
+    margin: 100px auto 0;
+}
+
+    /* Block Footer */ 
+    
     /* Reseau social */
 
 .blockSocial {
@@ -974,7 +1027,7 @@ sup {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    color: #b4a064;
+    color: #938461;
     padding: 0 0 10px;
 }
 
