@@ -10,6 +10,12 @@ body {
     margin: 50px auto 0;
 }
 
+#separation-block-footer {
+    border: 1px solid;
+    border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
+    margin: 20px auto 0;
+}
+
 /* BOUTON RETOUR HAUT */
 
 .to-top {
@@ -412,7 +418,6 @@ ul li {
 #hotel-inner {
     margin: 10px auto;
     padding: 20px 0;
-
 }
 
 .rooms-intro {
@@ -490,7 +495,7 @@ ul li {
 .rooms .room-teaser .room-descriptions {
     position: absolute;
     z-index: 1;
-    top: 70%;
+    top: 60%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -569,7 +574,7 @@ ul li {
     line-height: normal;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 6px 3px 3px #333333;
 }
 
 .rooms .room-teaser .hover {
@@ -872,7 +877,7 @@ sup {
     /* Destinations */
     
 #destination {
-    padding: 48px 0 60px;
+    padding: 48px 0 0;
     margin: 0 auto
 }
 
@@ -919,7 +924,7 @@ sup {
     margin: 0;
     width: 100%;
     height: auto;
-   /* box-sizing: border-box;*/
+    box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -964,8 +969,8 @@ sup {
 }
 
 .longDescriptionSectionBlock {
-    padding: 45px 0 100px;
-    
+    padding: 45px 0 0;
+    display: inline-block;
 }
 
 .longDescriptionSection.slogan {
@@ -974,53 +979,208 @@ sup {
     padding: 0 10px;
 }
 
+.longDescriptionSection.slogan .longDescriptionSlogan {
+    float: left;
+    max-width: 300px;
+}
+
 .longDescriptionSection.slogan .longDescriptionSlogan p {
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
     line-height: 45px;
     margin: 0;
-    padding: 0 15px 0 0;
+    padding: 0;
     color: #938461;
-    text-align: left;
-    float: left;
-    max-width: 300px;
-    width: 100%;
+    padding: 0 15px 0 0;
+    /*width: 100%*/
 }
 
 .longDescriptionSection.slogan .longDescription {
     float: left;
     max-width: 684px;
-    width: 100%;
 }
 
 .longDescriptionSection.slogan .longDescription p {
-    text-align: left;
-}
-
-.longDescriptionSection .longDescription p {
     line-height: 24px;
-    margin: 5px auto 15px;
+    margin: 0 auto 15px;
     font-size: 16px;
-    text-align: justify;
-    max-width: 1004px;
+    text-align: left;
+    
 }
 
-#separation-blockFooter {
-    border: 1px solid;
-    border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
-    margin: 100px auto 0;
+    /* A visiter */
+
+#blockExploreDestination {
+    margin: 50px auto 60px;
+}
+
+#blockExploreDestination .blockDestination {
+    max-width: 900px;
+    padding: 0 10px 30px;
+    margin: 0 auto;
+}
+
+#blockExploreDestination h3 {
+    color: #938461;
+    font-size: 20px;
+    padding: 10px 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.hr-visite {
+    margin: 10px 0 0;
+    height: 1px;
+    width: 6%;
+    background-color: #b4a064;
+}
+
+#blockExploreDestination .blockDestination p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;      /*#6f6f6f;*/
+    margin: 15px 0;
+}
+    
+.destinations .block.destination-list {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overlay-image {
+    position: relative;
+    width: 100%;
+    padding: 2px;
+}
+
+   /* Image originale */
+.overlay-image .destination-image img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.destination-teaser .destination-descriptions {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    transition: top .5s cubic-bezier(0.390, 0.575, 0.565, 1.000), background-color .4s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s;
+    background: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, .95));
+}
+
+.destination-teaser .learnMore {
+    text-align: center;
+}
+
+.destination-teaser .learnMore span {
+    margin: 10px 0 0;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #FFF;
+    transition: border-color .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition-delay: .5s;
+}
+
+.destination-teaser .learnMore span {
+    border-color: #fff;
+}
+
+.destination-teaser a:hover .learnMore span {
+    border-color: #b4a064;
+}
+
+.destination-teaser .destination-name {
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    line-height: normal;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+.destination-teaser .hover {
+    display: none;
+    margin: 0;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), display .3 ease 1s;
+}
+
+.destination-teaser a:hover .hover {
+    opacity: 1;
+    display: block;
+    max-height: 300px;
+}
+
+.destination-teaser a:hover .destination-descriptions {
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    padding-top: 35%;
+    background: linear-gradient(rgba(17, 17, 17, .4), rgba(17, 17, 17, .95));
+}
+
+.destination-teaser a:hover .destination-short-description {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.learnMore span {
+    overflow: hidden;
+}
+
+.learnMore.center {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.destination-img-end {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.destination-img-end img {
+    padding: 0;
+    margin: 50px 8px;
+    width: 45%;
+    height: auto;
+    display: inline-block;
+}
+
+.destination-img-end-solo {
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.destination-img-end-solo img {
+    width: 50%;
+    height: auto;
 }
 
     /* Block Footer */ 
-    
     /* Reseau social */
 
 .blockSocial {
     max-width: 1200px;
     background-color: #f5f5f5;
-    margin: 50px auto 30px;
+    margin: 60px auto 30px;
     padding: 30px 0;
-    border:  1px solid #e1e1e1;
+    border:  1px solid #d4d4d4;
 }
 
 .contentSocial h3 {
@@ -1107,10 +1267,6 @@ footer .blockinfo {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-/*footer .descriptions a:hover{
-    color: #b4a064;
-}*/
 
 footer .blockinfo .descriptions a:not(:last-child):after {
     content: '|';
