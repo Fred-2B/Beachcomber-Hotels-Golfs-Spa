@@ -4,17 +4,17 @@ body {
 	height: 100%;
 }
 
-#separation-block {
+.separation-block {
     border: 1px solid;
     border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
     margin: 50px auto 0;
 }
 
-#separation-block-footer {
+/*#separation-block-footer {
     border: 1px solid;
     border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
     margin: 20px auto 0;
-}
+}*/
 
 /* BOUTON RETOUR HAUT */
 
@@ -159,7 +159,7 @@ body {
 }
 
 .hr {
-    margin: 15px 0 40px;
+    margin: 15px auto 40px;
     height: 1px;
     width: 28%;
     background-color: #b4a064;
@@ -368,7 +368,7 @@ ul li {
 }
 
 .hr-rooms {
-    margin: 10px 0 0;
+    margin: 10px auto 0;
     height: 1px;
     width: 8%;
     background-color: #b4a064;
@@ -582,7 +582,7 @@ ul li {
     margin: 0;
     opacity: 0;
     max-height: 0;
-    transition: max-height .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), display .3 ease 1s;
+    transition: max-height .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity .4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }
 
 .rooms .room-teaser a:hover .hover {
@@ -659,7 +659,6 @@ sup {
     max-width: 990px;
     margin: 0 auto;
     padding: 48px 0 0;
-    
 }
 
 #block-exclusivities h2 {
@@ -667,13 +666,12 @@ sup {
     color: #938461;
     font-size: 22px;
     line-height: 32px;
-    margin: 45px 0 9px;
+    margin: 45px 0 0;
     padding: 0 0 10px;
-    
 }
 
 .hr-atout {
-    margin: 10px 0 0;
+    margin: 0 auto;
     height: 1px;
     width: 12%;
     background-color: #b4a064;
@@ -682,7 +680,7 @@ sup {
 #block-exclusivities .subtitle {
     color: #231f21;
     padding: 7px 0 10px;
-    margin: 0 15px 10px;
+    margin: 0 0 10px;
     min-height: 1px;
     text-align: center;
 }
@@ -696,7 +694,8 @@ sup {
     width: 100%;
     height: auto;
     min-height: 50px;
-    margin: 20px 0 15px;
+    margin: 0 0 15px;
+    border: 1px solid #6f6f6f;
 }
 
 #block-exclusivities h3 {
@@ -726,25 +725,26 @@ sup {
     color: #938461;
     font-size: 22px;
     line-height: 32px;
-    margin: 45px 0 9px;
+    margin: 45px 0 0;
     padding: 0 0 10px;
 }
 
 .hr-esperiences {
-    margin: 10px 0 0;
+    margin: 0 auto;
     height: 1px;
     width: 15%;
     background-color: #b4a064;
 }
 
-#themes .more-arrow a {
-    font-size: 14px;
+#themes .more-arrow {
+    font-size: 16px;
     text-decoration: none;
     text-align: center;
     color: #231f21;
+    margin: 10px auto 0;
 }
 
-#themes .more-arrow a:hover {
+#themes .more-arrow:hover {
     color: #b4a064;
 }
 
@@ -755,6 +755,7 @@ sup {
 .themeList {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px auto 0;
 }
 
 .example {
@@ -884,7 +885,7 @@ sup {
 #destination h2 {
     font-size: 22px;
     line-height: 32px;
-    margin: 45px 0 9px;
+    margin: 45px 0 0;
     padding: 0 0 10px;
     color: #938461;
     font-weight: 400;
@@ -892,7 +893,7 @@ sup {
 }
 
 .hr-destination {
-    margin: 10px 0 0;
+    margin: 0 auto;
     height: 1px;
     width: 8%;
     background-color: #b4a064;
@@ -900,7 +901,7 @@ sup {
 
 #destination .subtitle {
     padding: 7px 0 10px;
-    margin: 0 15px 10px;
+    margin: 0 0 10px;
     text-align: center;
     min-height: 1px;
 }
@@ -1005,7 +1006,6 @@ sup {
     margin: 0 auto 15px;
     font-size: 16px;
     text-align: left;
-    
 }
 
     /* A visiter */
@@ -1039,7 +1039,7 @@ sup {
     text-align: center;
     font-size: 16px;
     line-height: 28px;
-    color: #333;      /*#6f6f6f;*/
+    color: #333;      
     margin: 15px 0;
 }
     
@@ -1115,7 +1115,7 @@ sup {
     margin: 0;
     opacity: 0;
     max-height: 0;
-    transition: max-height .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), display .3 ease 1s;
+    transition: max-height .4s cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity .4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }
 
 .destination-teaser a:hover .hover {
@@ -1158,25 +1158,23 @@ sup {
     margin: 50px 8px 0;
     width: 100%;
     height: auto;
-    
+    border: 1px solid #6f6f6f;
 }
 
 .destination-img-end-solo {
     text-align: center;
     margin: 30px 0 0;
+    
 }
 
 .destination-img-end-solo img {
     width: 50%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #6f6f6f;
 }
-
-.destination-img-end .destination-img-end-solo figcaption {
-    /*display: block;*/
-    color: #6f6f6f;
-}
-
-    /* Block Footer */ 
+   /* Block Footer */ 
     /* Reseau social */
 
 .blockSocial {
@@ -1184,7 +1182,7 @@ sup {
     background-color: #f5f5f5;
     margin: 60px auto 30px;
     padding: 30px 0;
-    border:  1px solid #d4d4d4;
+    border:  1px solid #c4c4c4;
 }
 
 .contentSocial h3 {
