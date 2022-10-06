@@ -744,9 +744,12 @@ sup {
     background-color: #b4a064;
 }
 
+#themes .subtitle a {
+    text-decoration: none;
+}
+
 #themes .more-arrow {
     font-size: 16px;
-    text-decoration: none;
     text-align: center;
     color: #231f21;
     margin: 10px auto 0;
