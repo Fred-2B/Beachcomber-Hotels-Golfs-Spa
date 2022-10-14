@@ -1,8 +1,23 @@
-body {
-	margin: 0;
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    margin: 0;
 	padding: 0;
 	height: 100%;
-}
+    animation: fadeInAnimation ease 4s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1; 
+} 
+@keyframes fadeInAnimation { 
+0% { 
+    opacity: 0; 
+    } 
+100% { 
+    opacity: 1; 
+    } 
+} 
 
 .separation-block {
     border: 1px solid;
@@ -10,14 +25,7 @@ body {
     margin: 50px auto 0;
 }
 
-/*#separation-block-footer {
-    border: 1px solid;
-    border-image: linear-gradient(to right, transparent, #b4a064, transparent) 1;
-    margin: 20px auto 0;
-}*/
-
 /* BOUTON RETOUR HAUT */
-
 .to-top {
 	background: transparent;
 	position: fixed;
@@ -48,11 +56,9 @@ body {
 }
 
     /* NAVBAR */
-
 .navbar {
     border-top: 6px solid #b4a064;
     border-bottom: 1px solid #b4a064;
-    
 }
 
 .nav-link {
@@ -61,16 +67,12 @@ body {
 	text-transform: uppercase;
     transition: all 0.5s ease-in-out;
     color: #333333;
-    /*color: #1e1e1e;*/
 }
 
 #navbarSupportedContent .active, 
 #navbarSupportedContent .nav-link:hover, 
 #navbarSupportedContent .nav-link:focus {
     color: #2d2d2d;
-    /*text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 0.3rem;*/
 }
 
 .navbar-brand img {
@@ -83,7 +85,6 @@ body {
 }
 
     /* ANIMATION NAVBAR*/
-
 .nav-link::after {
     content: "";
     display: block;
@@ -100,7 +101,6 @@ body {
     /* FIN ANIMATION */
 
     /* Presentation */
-    
 .discover-hotel img {
     margin: 0;
     padding: 0;
@@ -112,7 +112,6 @@ body {
 }
 
     /* FORMULAIRE */
-
 .booking-form {
     background: #333333;
     -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.3);
@@ -166,7 +165,6 @@ body {
 }
 
     /*Présentation */
-
 #bg-presentation {
     padding: 60px 0 0;
 }
@@ -230,7 +228,6 @@ body {
 }
 
     /* Logos */
-
 #logos {
     max-width: 1004px;
     margin: 30px auto;
@@ -253,15 +250,6 @@ body {
     width: 50%;
     cursor: pointer;
 }
-
-/*.hotel-content-amenities .amenities-list ul {
-    margin: 5px auto 30px;
-}*/
-
-/*.hotel-content-amenities>ul>li {
-    float: left;
-    width: initial;
-}*/
 
 ul li {
     list-style-type: none;
@@ -298,7 +286,6 @@ ul li {
     text-transform: uppercase;
     font-size: 12px;
     min-height: 44px;
-    
 }
 
 .hotel-content-amenities .hotel-amenities ul li {
@@ -352,7 +339,6 @@ ul li {
 }
 
     /* Rooms */
-
 #blockRooms {
     padding: 10px 0 0;
     margin: 0 auto;
@@ -396,7 +382,6 @@ ul li {
 }
 
 	/* CAROUSEL */
-    
 .rooms-carousel {
     background-color: #333333;
     border-top: 2px solid #b4a064;
@@ -414,7 +399,6 @@ ul li {
 }
 
     /* Chambres */
-
 #hotel-inner {
     margin: 10px auto;
     padding: 20px 0;
@@ -445,7 +429,6 @@ ul li {
 }
   
    /* Image originale */
-
 .overlay-image .room-image img {
     display: inline-block;
     width: 100%;
@@ -655,7 +638,6 @@ sup {
 }
 
   /* Exclusife*/
-
 #block-exclusivities {
     max-width: 990px;
     margin: 0 auto;
@@ -722,7 +704,6 @@ sup {
 }
 
     /* Eperiences Beachcomber */
-
 #themes {
      padding: 48px 0 0;
     margin: 0 auto;
@@ -887,7 +868,6 @@ sup {
 }
 
     /* Destinations */
-    
 #destination {
     padding: 48px 0 0;
     margin: 0 auto
@@ -1020,7 +1000,6 @@ sup {
 }
 
     /* A visiter */
-
 #blockExploreDestination {
     margin: 50px auto 60px;
 }
@@ -1186,9 +1165,9 @@ sup {
     margin: 0 auto;
     border: 1px solid #6f6f6f;
 }
-   /* Block Footer */ 
-    /* Reseau social */
 
+    /* Block Footer */ 
+    /* Reseau social */
 .blockSocial {
     max-width: 1200px;
     background-color: #f5f5f5;
