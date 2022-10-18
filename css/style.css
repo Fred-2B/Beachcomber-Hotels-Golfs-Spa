@@ -705,7 +705,7 @@ sup {
 
     /* Eperiences Beachcomber */
 #themes {
-     padding: 48px 0 0;
+    padding: 48px 0 0;
     margin: 0 auto;
 }
 
@@ -963,6 +963,7 @@ sup {
 .longDescriptionSectionBlock {
     padding: 45px 0 0;
     display: inline-block;
+    width: 100%;
 }
 
 .longDescriptionSection.slogan {
@@ -1289,8 +1290,87 @@ footer .footerConditions {
     padding: 12px 0;
 }
 
+@media screen and (max-width: 1399px) {
+    .box-back {
+        height: 40vh;
+        padding: 20px 0;
+    }
+    .box-back h3 {
+        font-size: .9rem;
+    }
+    .box-back h6 {
+        font-size: .8rem;
+    }
+    .box-back p {
+        font-size: .8rem;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .themes .more-arrow {
+        font-size: .7rem;
+    }
+}
 
-    
+@media screen and (max-width: 1020px) {
+    .destinationContent .shortDescription p {
+        padding: 0 40px;
+        margin: 0 auto 15px;
+    }
+    .longDescriptionSection.slogan .longDescriptionSlogan p {
+        padding: 0 0 0 15px;
+        /* width: 100%; */
+    }
+    .longDescriptionSection.slogan .longDescription {
+        margin: 0 auto;
+        max-width: 1100px;
+        padding: 15px 50px 0;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .box-back {
+        height: 35vh;
+        padding: 20px 0;
+    }
+    .box-back h3 {
+        font-size: .9rem;
+    }
+    .box-back h6 {
+        font-size: .8rem;
+    }
+    .box-back p {
+        font-size: .8rem;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .themes .more-arrow {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .example {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .box-back h3 {
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+    .box-back h6 {
+        font-size: 1rem;
+        margin: 50px auto;
+    }
+    .box-back p {
+        font-size: .9rem;
+        padding: 0 10px;
+        margin: 0 0 50px;
+    }
+    #themes .more-arrow {
+        font-size: 1rem;
+    }
+}
 
 
 
