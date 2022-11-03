@@ -387,20 +387,56 @@ ul li {
 }
 
 	/* CAROUSEL */
-.rooms-carousel {
+.carousel {
     background-color: #333333;
     border-top: 2px solid #b4a064;
     border-bottom: 2px solid #b4a064;
 }
 
-#carouselExampleFade {
-    width: 1200px;
-    height: auto;
+.slider {
+    max-width: 1200px;
+    height: 60vh;
+    position: relative;
+    margin: 0 auto;
 }
 
-.carousel-item img {
+.slider img {
+    object-fit: cover;
+    height: 100%;
     width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.50s;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.suivant, .precedent {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.suivant:hover {
+    color: #b4a064;
+}
+.precedent:hover {
+    color: #b4a064;
+}
+
+.suivant {
+    right: 1rem;
+}
+
+.precedent {
+    left: 1rem;
 }
 
     /* Chambres */
